@@ -1,13 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "My Site",
-    tagline: "Dinosaurs are cool",
+    title: "Salty Simulations Documentation",
+    tagline: "",
     url: "https://your-docusaurus-test-site.com",
     baseUrl: "/",
     onBrokenLinks: "throw",
@@ -34,15 +34,9 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
@@ -54,23 +48,33 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            colorMode: {
+                defaultMode: "dark",
+                disableSwitch: false,
+                respectPrefersColorScheme: false,
+            },
             navbar: {
                 title: "Salty Simulations Documentation",
                 logo: {
                     alt: "Salty Simulations Logo",
-                    src: "https://raw.githubusercontent.com/saltysimulations/branding/main/salty-shaker.svg",
+                    src: "/img/salty-shaker.svg",
                 },
                 items: [
                     {
                         type: "doc",
-                        docId: "overview",
+                        docId: "introduction",
                         position: "left",
-                        label: "Salty 74S",
+                        label: "Docs",
+                    },
+                    {
+                        to: "/release-notes",
+                        position: "left",
+                        label: "Release Notes",
                     },
                     {
                         href: "https://github.com/saltysimulations/salty-747",
-                        label: "GitHub",
                         position: "right",
+                        className: "navbar-github",
                     },
                 ],
             },
@@ -81,8 +85,16 @@ const config = {
                         title: "Docs",
                         items: [
                             {
-                                label: "Tutorial",
-                                to: "/docs/intro",
+                                label: "Installation",
+                                to: "/docs/installation",
+                            },
+                            {
+                                label: "Beginner's Guide",
+                                to: "/docs/category/beginners-guide",
+                            },
+                            {
+                                label: "Guides",
+                                to: "/docs/category/guides",
                             },
                         ],
                     },
@@ -97,8 +109,24 @@ const config = {
                                 label: "Twitter",
                                 href: "https://twitter.com/Salty_Sim",
                             },
+                            {
+                                label: "Facebook",
+                                href: "https://www.facebook.com/people/Salty-Simulations/100022089045483",
+                            },
                         ],
-                    }
+                    },
+                    {
+                        title: "Other",
+                        items: [
+                            {
+                                html: `
+                                    <a href="https://www.vercel.com?utm_source=saltysimulations&utm_campaign=oss" target="_blank" rel="noreferrer noopener">
+                                        <img src="/img/vercel.svg" alt="Powered by Vercel" width="200" height="51" />
+                                    </a>
+                                `,
+                            },
+                        ],
+                    },
                 ],
                 copyright: `Copyright © 2022 Salty Simulations`,
             },
