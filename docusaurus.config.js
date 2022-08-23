@@ -34,6 +34,8 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
+                    showLastUpdateAuthor: true,
+                    showLastUpdateTime: true,
                 },
                 blog: {
                     showReadingTime: true,
@@ -41,6 +43,19 @@ const config = {
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
                 },
+            }),
+        ],
+    ],
+
+    plugins: [
+        [
+            "content-docs",
+            /** @type {import('@docusaurus/plugin-content-docs').Options} */
+            ({
+                id: "release-notes",
+                path: "release-notes",
+                routeBasePath: "release-notes",
+                sidebarPath: require.resolve("./sidebars.js"),
             }),
         ],
     ],
@@ -67,7 +82,7 @@ const config = {
                         label: "Docs",
                     },
                     {
-                        to: "/release-notes",
+                        to: "/release-notes/latest",
                         position: "left",
                         label: "Release Notes",
                     },

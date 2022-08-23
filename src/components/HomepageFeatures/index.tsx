@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Release Notes',
-    link: "/docs/category/release-notes",
+    link: "/release-notes/latest",
     description: (
       <>
         Curious about what was added to the latest stable release? Check out the
