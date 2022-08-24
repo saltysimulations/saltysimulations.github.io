@@ -37,7 +37,7 @@ For best results, use our [custom SimBrief airframe](https://www.simbrief.com/sy
 :::
 
 :::info
-This section assumes you have correctly set up [SimBrief integration](/guides/simbrief).
+This section assumes you have correctly set up [SimBrief integration](/docs/guides/simbrief).
 :::
 
 Getting the desired amount of fuel from SimBrief is as simple as making sure your SimBrief OFP has been generated, and then pressing `SEND` under `OFP REQUEST`. This will fetch and automatically input the correct amount of fuel from your flight plan.
