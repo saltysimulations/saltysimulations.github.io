@@ -14,7 +14,7 @@ function HomepageHeader() {
             <div className="container">
                 <h1 className={clsx(styles.title)}>{siteConfig.title}</h1>
                 <div className={styles.buttons}>
-                    <Link className="button button--primary button--lg" to="/docs/installation">
+                    <Link className="button button--primary button--lg" to="/installation">
                         Get Started
                     </Link>
                 </div>

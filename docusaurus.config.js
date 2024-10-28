@@ -38,6 +38,7 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
+                    routeBasePath: "/"
                 },
                 blog: {
                     showReadingTime: true,
@@ -103,11 +104,11 @@ const config = {
                         items: [
                             {
                                 label: "Installation",
-                                to: "/docs/installation",
+                                to: "/installation",
                             },
                             {
                                 label: "EFB",
-                                to: "/docs/efb/overview",
+                                to: "/efb/overview",
                             }
                         ],
                     },

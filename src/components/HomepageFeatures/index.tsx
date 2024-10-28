@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Installation",
-    link: "/docs/installation",
+    link: "/installation",
     description: (
       <>
         New to the 74S? Get started by learning how to install the aircraft.
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'EFB Docs',
-    link: "/docs/efb/overview",
+    link: "/efb/overview",
     description: (
       <>
         Learn about the features of our EFB.
