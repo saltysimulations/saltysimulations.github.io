@@ -79,7 +79,7 @@ const config = {
                 items: [
                     {
                         type: "doc",
-                        docId: "introduction",
+                        docId: "installation",
                         position: "left",
                         label: "Docs",
                     },
@@ -106,13 +106,9 @@ const config = {
                                 to: "/docs/installation",
                             },
                             {
-                                label: "Beginner's Guide",
-                                to: "/docs/category/beginners-guide",
-                            },
-                            {
-                                label: "Guides",
-                                to: "/docs/category/guides",
-                            },
+                                label: "EFB",
+                                to: "/docs/efb/overview",
+                            }
                         ],
                     },
                     {
@@ -131,21 +127,9 @@ const config = {
                                 href: "https://www.facebook.com/people/Salty-Simulations/100022089045483",
                             },
                         ],
-                    },
-                    {
-                        title: "Other",
-                        items: [
-                            {
-                                html: `
-                                    <a href="https://www.vercel.com?utm_source=saltysimulations&utm_campaign=oss" target="_blank" rel="noreferrer noopener">
-                                        <img src="/img/vercel.svg" alt="Powered by Vercel" width="200" height="51" />
-                                    </a>
-                                `,
-                            },
-                        ],
-                    },
+                    }
                 ],
-                copyright: `Copyright © 2022 Salty Simulations`,
+                copyright: `Copyright © 2024 Salty Simulations`,
             },
             prism: {
                 theme: lightCodeTheme,

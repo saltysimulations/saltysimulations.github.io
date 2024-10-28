@@ -10,21 +10,20 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Beginner's Guide",
-    link: "/docs/category/beginners-guide",
+    title: "Installation",
+    link: "/docs/installation",
     description: (
       <>
-        New to the 74S? Get started by reading our guide tailored towards beginners.
+        New to the 74S? Get started by learning how to install the aircraft.
       </>
     ),
   },
   {
-    title: 'Feature Guides',
-    link: "/docs/category/guides",
+    title: 'EFB Docs',
+    link: "/docs/efb/overview",
     description: (
       <>
-        Want to learn about specific features of the aircraft or learn how to operate
-        the aircraft in detail? These guides may be beneficial to you.
+        Learn about the features of our EFB.
       </>
     ),
   },

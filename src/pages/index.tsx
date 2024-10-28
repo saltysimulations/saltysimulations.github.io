@@ -14,7 +14,7 @@ function HomepageHeader() {
             <div className="container">
                 <h1 className={clsx(styles.title)}>{siteConfig.title}</h1>
                 <div className={styles.buttons}>
-                    <Link className="button button--primary button--lg" to="/docs/introduction">
+                    <Link className="button button--primary button--lg" to="/docs/installation">
                         Get Started
                     </Link>
                 </div>
@@ -25,7 +25,7 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
     return (
-        <Layout title={""} description="Description will go into a meta tag in <head />">
+        <Layout title={""} description="Documentation for the Salty 74S">
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
